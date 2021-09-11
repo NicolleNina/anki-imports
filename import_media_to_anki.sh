@@ -1,7 +1,9 @@
 #!/bin/bash
 
+mkdir -p ~/anki_downloads
+mkdir -p ~/anki_csv
+
 input_file=~/anki_downloads
-anki_csv=~/anki_csv
 
 import_media() {
   for file in $1/*
@@ -44,6 +46,7 @@ move_csv() {
         echo 'copying:' $file
         cp $file ~/anki_csv
       fi
+      echo 'Done!'
     done
 }
 
