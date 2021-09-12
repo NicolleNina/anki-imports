@@ -16,7 +16,7 @@ Call this script to import the media to anki:
 ~/anki-imports/./import_media_to_anki.sh
 ```
 
-To find the items.csv file to import to Anki from the `anki_csv` directory.
+Import items.csv to Anki UI from the `anki_csv` directory.
 
 After everything is imported, empty the directories for the next import:
 ```bash
