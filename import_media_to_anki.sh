@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# auto-create these if they don't exist
+touch ~/.zshrc
 mkdir -p ~/anki_downloads
 mkdir -p ~/anki_csv
 
