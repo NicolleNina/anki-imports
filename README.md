@@ -11,13 +11,13 @@ alias prunemedia="~/anki-imports/./prune_anki_media.sh"' >> ~/.zshrc
 
 source ~/.zshrc
 ```
-
-## Usage
-### Import Anki files From the `Language-Reactor` App
 Make a new directory called anki_downloads to export your media to:
 ```bash
 mkdir -p ~/anki_downloads
 ```
+
+## Usage
+### Import Anki files From the `Language-Reactor` App
 
 Import the media to anki:
 ```bash
