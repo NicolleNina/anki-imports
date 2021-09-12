@@ -13,20 +13,21 @@ import_media() {
         import_media $file
       elif [ -f $file ]
       then
-        unzip_media $file
         transfer_to_anki $file
       fi
-      echo 'Done!'
     done
+    echo 'Done!'
 }
 
-
 unzip_media() {
-  if [[ $1 == *.zip ]] 
-  then
-    echo 'unzipping:' $1
-    unzip $file
-  fi
+  for file in $1/*
+    do
+      if [[ $file == *.zip ]]
+      then
+        echo 'unzipping:' $file
+        unzip $file  -d ~/anki_downloads
+      fi
+    done
 }
 
 transfer_to_anki() {
@@ -50,5 +51,6 @@ move_csv() {
     done
 }
 
+unzip_media $input_file
 import_media $input_file
 move_csv
