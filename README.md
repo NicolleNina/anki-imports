@@ -5,6 +5,8 @@ git clone https://github.com/tylerCaineRhodes/anki-imports.git
 ```
 Run this once to create the commands:
 ```bash
+chmod +x ~/anki-imports/*.sh
+
 echo 'alias ankimedia="cd ~/Library/Application\ Support/Anki2/User\ 1/collection.media" \n 
 alias importmedia="~/anki-imports/./import_media_to_anki.sh" \n
 alias prunemedia="~/anki-imports/./prune_anki_media.sh"' >> ~/.zshrc
