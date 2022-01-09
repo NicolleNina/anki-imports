@@ -1,9 +1,9 @@
-input_file=~/anki_downloads
-anki_csv=~/anki_csv
+readonly INPUT_FILE=~/anki_downloads
+readonly ANKI_CSV=~/anki_csv
 
 prune_files() {
-  rm -rf $input_file/*
-  rm -rf $anki_csv/*
+  rm -rf $INPUT_FILE/*
+  rm -rf $ANKI_CSV/*
 }
 
 prune_files
